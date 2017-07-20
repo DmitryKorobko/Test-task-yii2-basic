@@ -122,10 +122,6 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        if (!Yii::$app->user->isGuest) {
-            return $this->render('about');
-        }
-
-        return $this->render('index');
+        return $this->render('about');
     }
 }
